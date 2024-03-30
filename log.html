@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Pacifico&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Changa:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  </head>
+  <script src="https://kit.fontawesome.com/38a6f70c10.js"crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="header two">
+        <nav>
+          <a href="index.html"
+            ><img class="logos" src="./images/logo.png" width="70px"
+          /></a>
+          <div class="navi-links" id="navilinks1">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./log.html">LOG-IN</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text">
+            
+                <div class="container">
+                    <h1>Sign In</h1>
+                    <form>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" required>
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required>
+                        <br>
+                        <div class="buttonend">
+                       <a href="./index.html" ><button type="submit">Sign In</button>
+                        </a>
+                        </div>
+                    </form>
+                    
+                    <h3>
+                       <i>NB:</i> To Work with us, you must have an account.
+                    </h3>
+                    <br>
+
+                    <h3 class="h3end"> Our email:</h3>
+                    <h3 class="h3end">Empressors.Ints@Gmail.com</p>
+                </div>
+                
+                </section>
+
+                <script>
+                    var navilinks1 = document.getElementById("navilinks1");
+              
+                    function showMenu() {
+                      navilinks1.style.right = "0";
+                    }
+                    function hideMenu() {
+                      navilinks1.style.right = "-200px";
+                    }
+                  </script>
+                
+            
+            
+</body>
+
+</html>
